@@ -311,7 +311,7 @@ nav #burger {
 .hire-me {
     display: flex;
     justify-content: center;
-    margin: 50px 10% auto 10%;
+    margin: 10vh;
     text-align: center;
 }
 
