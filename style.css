@@ -311,7 +311,8 @@ nav #burger {
 .hire-me {
     display: flex;
     justify-content: center;
-    margin: 50px 10% 0 10%;
+    margin: 50px 10% auto 10%;
+    text-align: center;
 }
 
 .hire-me .download-resume {
