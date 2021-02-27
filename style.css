@@ -169,7 +169,7 @@ nav #burger {
 
 .page-p {
     text-align: justify;
-    margin: 0 20% 20% 20%;
+    margin: 0 20% 5% 20%;
 }
 
 .cover {
@@ -244,7 +244,7 @@ nav #burger {
     width: 80%;
     height: auto;
     max-width: 400px;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
 }
 
