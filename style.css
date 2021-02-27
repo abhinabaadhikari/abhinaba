@@ -388,7 +388,7 @@ nav #burger {
 @media screen and (max-width: 1140px) {
     .cover {
         background: None;
-        height: calc(100vh - (2 * 90px + 95px); 
+        height: calc(100vh - (2 * 90px + 100px));
     }
 
     .cover .page-heading {
