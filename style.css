@@ -469,6 +469,10 @@ nav #burger {
     .page-p {
         margin: 0 10% 5% 10%
     }
+    
+    .social {
+        margin-top: 10vh;
+    }
 }
 
 @media screen and (min-width: 1000px) {
