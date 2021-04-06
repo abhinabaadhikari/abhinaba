@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Abhinaba | Home</title>
+    <title>Web Project 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/halimun" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -24,19 +26,19 @@
     <!------------------- NAVBAR START ------------------->
 
     <nav id="nav">
-        <a href="index.html" class="nav-h1 noSelect" id="abhinaba">Abhinaba</a>
+        <div onclick="home()" class="nav-h1" id="abhinaba"><img src="logo.svg"></div>
         <ul class="nav-ul" id="nav-ul">
             <li class="nav-li" id="burger">
-                <div class="items noSelect" onclick="navView()" style="text-align: right;"><i class="fas fa-bars"></i></div>
+                <div class="items" onclick="navView()" style="text-align: right;"><i class="fa fa-bars" aria-hidden="true"></i></div>
             </li>
             <li class="nav-li">
-                <a class="items noSelect">HOME</a>
+                <div class="items">HOME</div>
             </li>
             <li class="nav-li">
-                <a class="items noSelect" href="photos.html">IMAGES</a>
+                <div class="items" onclick="photos()">IMAGES</div>
             </li>
             <li class="nav-li">
-                <a class="items noSelect" href="contact.html">CONTACT</a>
+                <div class="items" onclick="contact()">CONTACT</div>
             </li>
         </ul>
     </nav>
@@ -53,7 +55,7 @@
         <br><br>
         Then, gradually when I was in my 11th standard, I knew what's best for me, so I opted for Science with Computer Science as my additional subject. Till 12th standard, I used to make small applications using C++, which used to be black screened. Afterward, I went on for my Bachelor's degree in Information Technology. There I came to know about many internal workings of a computer, making advanced applications, solving problems, etc. Till now, I have the same hunger for knowledge, but the purpose is different.
         <br><br>
-        I also possess some hobbies, like Photography, Cooking, and Coding. I got my first DSLR as a gift from my brother, and I capture plenty of pictures using it. You can have a look at some of them in the Images section.
+        I also possess hobbies, like Photography, Cooking, and Coding. I got my first DSLR as a gift from my brother, and I capture plenty of pictures using it. You can have a look at some of them in the Images section.
     </p>
     <div class="topic-headings">Academic Timeline</div>
     <div class="timeline">
@@ -89,15 +91,60 @@
     <div class="topic-headings">Skills</div>
     <div class="skills">
         <div class="skills-sets">
-            <div class="skills-items skills-items-emphasis noSelect" style="font-weight: 700;" title="C Language">C</div>
-            <div class="skills-items skills-items-emphasis noSelect"><i class="fab fa-css3-alt" title="CSS"></i></div>
-            <div class="skills-items skills-items-emphasis noSelect"><i class="fab fa-html5" title="HTML"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fab fa-css3-alt" title="CSS"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fab fa-html5" title="HTML"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fab fa-js" title="JavaScript"></i></div>
         </div>
         <div class="skills-sets">
-            <div class="skills-items skills-items-emphasis noSelect"><i class="fab fa-java" title="Java"></i></div>
-            <div class="skills-items skills-items-emphasis noSelect"><i class="fab fa-js" title="JavaScript"></i></div>
-            <div class="skills-items skills-items-emphasis noSelect"><i class="fab fa-python" title="Python"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fab fa-java" title="Java"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fab fa-python" title="Python"></i></div>
+            <div class="skills-items skills-items-emphasis"><i class="fas fa-database" title="Database"></i></div>
         </div>
+        <div class="skills-sets">
+            <div class="skills-items skills-items-emphasis" title="C">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="1em" height="1em">
+                    <g id="surface29180952">
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 22.902344 3.285156 C 23.582031 2.90625 24.417969 2.90625 25.097656 3.285156 C 28.449219 5.167969 38.546875 10.835938 41.902344 12.71875 C 42.582031 13.101562 43 13.804688 43 14.566406 C 43 18.332031 43 29.667969 43 33.433594 C 43 34.195312 42.582031 34.898438 41.902344 35.28125 C 38.546875 37.164062 28.453125 42.832031 25.097656 44.714844 C 24.417969 45.09375 23.582031 45.09375 22.902344 44.714844 C 19.546875 42.832031 9.453125 37.164062 6.097656 35.28125 C 5.417969 34.898438 5 34.195312 5 33.433594 C 5 29.667969 5 18.332031 5 14.566406 C 5 13.804688 5.417969 13.101562 6.097656 12.71875 C 9.449219 10.835938 19.550781 5.167969 22.902344 3.285156 Z M 22.902344 3.285156 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(40.000001%,40.000001%,40.000001%);fill-opacity:1;" d="M 5.304688 34.402344 C 5.039062 34.046875 5 33.710938 5 33.253906 C 5 29.511719 5 18.242188 5 14.496094 C 5 13.738281 5.417969 13.039062 6.09375 12.660156 C 9.4375 10.789062 19.5 5.152344 22.84375 3.28125 C 23.519531 2.902344 24.4375 2.910156 25.113281 3.289062 C 28.457031 5.160156 38.484375 10.746094 41.828125 12.617188 C 42.097656 12.769531 42.304688 12.953125 42.488281 13.195312 Z M 5.304688 34.402344 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 24 10 C 31.726562 10 38 16.273438 38 24 C 38 31.726562 31.726562 38 24 38 C 16.273438 38 10 31.726562 10 24 C 10 16.273438 16.273438 10 24 10 Z M 24 17 C 27.863281 17 31 20.136719 31 24 C 31 27.863281 27.863281 31 24 31 C 20.136719 31 17 27.863281 17 24 C 17 20.136719 20.136719 17 24 17 Z M 24 17 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,20%,20%);fill-opacity:1;" d="M 42.484375 13.203125 C 43 13.6875 42.992188 14.414062 42.992188 14.988281 C 42.992188 18.785156 42.960938 29.578125 43 33.371094 C 43.003906 33.769531 42.871094 34.1875 42.675781 34.5 L 23.59375 24 Z M 42.484375 13.203125 " />
+                    </g>
+                </svg>
+            </div>
+            <div class="skills-items skills-items-emphasis" title="C++">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="1em" height="1em">
+                    <g id="surface29231749">
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 22.902344 3.285156 C 23.582031 2.90625 24.417969 2.90625 25.097656 3.285156 C 28.449219 5.167969 38.546875 10.835938 41.902344 12.71875 C 42.582031 13.101562 43 13.804688 43 14.566406 C 43 18.332031 43 29.667969 43 33.433594 C 43 34.195312 42.582031 34.898438 41.902344 35.28125 C 38.546875 37.164062 28.453125 42.832031 25.097656 44.714844 C 24.417969 45.09375 23.582031 45.09375 22.902344 44.714844 C 19.546875 42.832031 9.453125 37.164062 6.097656 35.28125 C 5.417969 34.898438 5 34.195312 5 33.433594 C 5 29.667969 5 18.332031 5 14.566406 C 5 13.804688 5.417969 13.101562 6.097656 12.71875 C 9.449219 10.835938 19.550781 5.167969 22.902344 3.285156 Z M 22.902344 3.285156 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(40.000001%,40.000001%,40.000001%);fill-opacity:1;" d="M 5.304688 34.402344 C 5.039062 34.046875 5 33.710938 5 33.253906 C 5 29.511719 5 18.242188 5 14.496094 C 5 13.738281 5.417969 13.039062 6.09375 12.660156 C 9.4375 10.789062 19.5 5.152344 22.84375 3.28125 C 23.519531 2.902344 24.4375 2.910156 25.113281 3.289062 C 28.457031 5.160156 38.484375 10.746094 41.828125 12.617188 C 42.097656 12.769531 42.304688 12.953125 42.488281 13.195312 Z M 5.304688 34.402344 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 24 10 C 31.726562 10 38 16.273438 38 24 C 38 31.726562 31.726562 38 24 38 C 16.273438 38 10 31.726562 10 24 C 10 16.273438 16.273438 10 24 10 Z M 24 17 C 27.863281 17 31 20.136719 31 24 C 31 27.863281 27.863281 31 24 31 C 20.136719 31 17 27.863281 17 24 C 17 20.136719 20.136719 17 24 17 Z M 24 17 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,20%,20%);fill-opacity:1;" d="M 42.484375 13.203125 C 43 13.6875 42.992188 14.414062 42.992188 14.988281 C 42.992188 18.785156 42.960938 29.578125 43 33.371094 C 43.003906 33.769531 42.871094 34.1875 42.675781 34.5 L 23.59375 24 Z M 42.484375 13.203125 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 31 21 L 33 21 L 33 27 L 31 27 Z M 38 21 L 40 21 L 40 27 L 38 27 Z M 38 21 " />
+                        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 29 23 L 35 23 L 35 25 L 29 25 Z M 36 23 L 42 23 L 42 25 L 36 25 Z M 36 23 " />
+                    </g>
+                </svg>
+            </div>
+            <div class="skills-items skills-items-emphasis" title="SQL">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" width="1em" height="1em" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M416,176v-64c0.025-4.253-1.645-8.341-4.64-11.36l-96-96C312.341,1.645,308.253-0.024,304,0H48C21.49,0,0,21.491,0,48
+				v416c0,26.51,21.49,48,48,48h112v-32H48c-8.837,0-16-7.163-16-16V48c0-8.837,7.163-16,16-16h240v64c0,17.673,14.327,32,32,32h64
+				v48H416z" />
+                                <path d="M144,288h32c8.837,0,16,7.163,16,16h32c0-26.51-21.49-48-48-48h-32c-26.51,0-48,21.49-48,48c0,26.51,21.49,48,48,48h32
+				c8.837,0,16,7.163,16,16s-7.163,16-16,16h-32c-8.837,0-16-7.163-16-16H96c0,26.51,21.49,48,48,48h32c26.51,0,48-21.49,48-48
+				c0-26.51-21.49-48-48-48h-32c-8.837,0-16-7.163-16-16S135.164,288,144,288z" />
+                                <path d="M368,352v-32c0-35.346-28.654-64-64-64c-35.346,0-64,28.654-64,64v32c0,35.346,28.654,64,64,64h80v-32h-24.96
+				C364.792,374.309,367.883,363.27,368,352z M336,352c0,17.673-14.327,32-32,32c-17.673,0-32-14.327-32-32v-32
+				c0-17.673,14.327-32,32-32c17.673,0,32,14.327,32,32V352z" />
+                                <path d="M432,384V256h-32v144c0,8.837,7.163,16,16,16h96v-32H432z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
     </div>
 
 
@@ -119,6 +166,4 @@
 
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
