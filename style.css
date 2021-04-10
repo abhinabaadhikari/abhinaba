@@ -295,14 +295,12 @@ nav #burger {
 }
 
 .skills .skills-items {
+    transition: transform 0.5s;
     margin: 0 30px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    transition: transform 0.5s;
-}
-
-.skills-items-links {
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
